@@ -4,7 +4,7 @@ import './Footer.css';
 
 
 function App() {
-
+  
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -19,6 +19,7 @@ function App() {
   });
 
   const handleChange = (e) => {
+
     const {name, value, type, checked, files } = e.target;
 
     if (type === 'checkbox') {
