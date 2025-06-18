@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import './index.css';
 import './Footer.css';
 
-
 function App() {
   
   const [formData, setFormData] = useState({
@@ -102,6 +101,7 @@ function App() {
         <label>
           <input
             type="radio"
+            id="male"
             name="gender"
             value="male"
             checked={formData.gender === 'male'}
@@ -111,6 +111,7 @@ function App() {
         <label>
           <input
             type="radio"
+            id="female"
             name="gender"
             value="female"
             checked={formData.gender === 'female'}
@@ -120,6 +121,7 @@ function App() {
         <label>
           <input
             type="radio"
+            id="other"
             name="gender"
             value="other"
             checked={formData.gender === 'other'}
@@ -131,6 +133,7 @@ function App() {
         <label>
           <input
             type="checkbox"
+            id="english"
             name="subject"
             value="english"
             checked={formData.subject.includes('english')}
@@ -140,6 +143,7 @@ function App() {
         <label>
           <input
             type="checkbox"
+            id="math"
             name="subject"
             value="math"
             checked={formData.subject.includes('math')}
@@ -149,6 +153,7 @@ function App() {
         <label>
           <input
             type="checkbox"
+            id="physics"
             name="subject"
             value="physics"
             checked={formData.subject.includes('physics')}
@@ -167,6 +172,7 @@ function App() {
         <p>Enter URL*</p>
         <input 
         type="url"
+        id="url"
         name="url"
         value={formData.url}
         onChange={handleChange}
@@ -175,6 +181,7 @@ function App() {
         <p>Select your choice: </p>
         <select 
         name="choice"
+        id="choice"
         value={formData.choice}
         onChange={handleChange}
         placeholder="Select your choice: "
